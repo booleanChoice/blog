@@ -1,4 +1,4 @@
-package com.booleanchoice.blog.pojo;
+package com.booleanchoice.blog.model;
 
 import java.util.Date;
 
