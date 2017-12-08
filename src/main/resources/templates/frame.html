@@ -7,38 +7,22 @@
     <script src="/lib/element-ui.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
 <div id="app">
     <el-container style="height: 100%">
         <el-header>
             <el-row style="height: 100%">
-                <el-col :span="14">
+                <el-col :span="16">
                     <span class="header-title">BooleanChoice's Blog</span>
                 </el-col>
-                <el-col :span="10" style="text-align: center">
+                <el-col :span="8" style="text-align: center">
                     <el-input class="header-search" placeholder="搜索文章" suffix-icon="el-icon-search"></el-input>
                 </el-col>
             </el-row>
         </el-header>
         <el-main>
-            <div id="home-container">
-                <el-row>
-                    <el-col :span="16">
-                        <span class="latest-blog-title">我的第一篇博客</span>
-                        <span class="under-line"></span>
-                        <div class="latest-blog-summary">
-                            这里是第一篇博客的摘要，随便写写吧，当没有摘要的时候，可能用第一段的文章内容来当做摘要
-                        </div>
-                    </el-col>
-                    <el-col :span="8" style="padding: 20px">
-                        <div class="latest-comment-container">
-                            <span class="latest-comment-title">最近留言 :</span>
-                        </div>
-                    </el-col>
-                </el-row>
-            </div>
+
         </el-main>
         <el-footer>
             <a target="_blank">About me :  </a>
