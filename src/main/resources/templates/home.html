@@ -14,10 +14,18 @@
     <el-container style="height: 100%">
         <el-header>
             <el-row style="height: 100%">
-                <el-col :span="14">
+                <el-col :span="8">
                     <span class="header-title">BooleanChoice's Blog</span>
                 </el-col>
-                <el-col :span="10" style="text-align: center">
+                <el-col :span="8">
+                    <el-menu class="header-menu" default-active="1" mode="horizontal" background-color="#23262A" text-color="#fff" active-text-color="#ffd04b">
+                        <el-menu-item index="1">首页</el-menu-item>
+                        <el-menu-item index="2">文章概览</el-menu-item>
+                        <el-menu-item index="3">留言板</el-menu-item>
+                        <el-menu-item index="4">类别查看</el-menu-item>
+                    </el-menu>
+                </el-col>
+                <el-col :span="8" style="text-align: center">
                     <el-input class="header-search" placeholder="搜索文章" suffix-icon="el-icon-search"></el-input>
                 </el-col>
             </el-row>
@@ -25,16 +33,33 @@
         <el-main>
             <div id="home-container">
                 <el-row>
-                    <el-col :span="16">
-                        <span class="latest-blog-title">我的第一篇博客</span>
-                        <span class="under-line"></span>
-                        <div class="latest-blog-summary">
-                            这里是第一篇博客的摘要，随便写写吧，当没有摘要的时候，可能用第一段的文章内容来当做摘要
+                    <el-col :span="16" style="padding: 20px">
+                        <div class="latest-blog-title-container">
+                            <span class="latest-blog-title">我的第一篇博客</span>
+                            <span class="latest-blog-category">类别：<a>随笔</a></span>
+                        </div>
+                        <div class="divideLine"></div>
+                        <div class="latest-blog-summary-container">
+                            <p class="latest-blog-summary">
+                                这里是第一篇博客的摘要，随便写写吧，当没有摘要的时候，可能用第一段的文章内容来当做摘要。
+                                这里是第一篇博客的摘要，随便写写吧，当没有摘要的时候，可能用第一段的文章内容来当做摘要。
+                                这里是第一篇博客的摘要，随便写写吧，当没有摘要的时候，可能用第一段的文章内容来当做摘要。
+                            </p>
+                            <a id="read-full-text" href="www.baidu.com">阅读全文 >>></a>
+                        </div>
+                        <div class="recent-blog">
+                            <div style="font-size: 25px; font-weight: 700">最新文章</div>
+                            <div class="divideLine"></div>
+                            <ul>
+                                <li v-for="tab in tabs">
+                                    <a :href="tab.link">{{ tab.text }}</a>
+                                </li>
+                            </ul>
                         </div>
                     </el-col>
                     <el-col :span="8" style="padding: 20px">
                         <div class="latest-comment-container">
-                            <span class="latest-comment-title">最近留言 :</span>
+                            <span class="latest-comment-title">最新评论：</span>
                         </div>
                     </el-col>
                 </el-row>
@@ -53,7 +78,28 @@
     new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            tabs: [
+                {
+                    text: '首页',
+                    link: '/home'
+                },
+                {
+                    text: '哔哩哔哩',
+                    link: 'https://www.bilibili.com'
+                },
+                {
+                    text: '我的微博',
+                    link: 'https://weibo.com/u/1936764695'
+                },
+                {
+                    text: '我的GitHub',
+                    link: 'https://github.com/booleanChoice'
+                },
+                {
+                    text: '百度官网',
+                    link: 'https://www.baidu.com'
+                }
+            ]
         }
     })
 </script>

@@ -9,6 +9,13 @@ body {
     background-color: #fff
 }
 
+a {
+    margin:0;
+    padding:0;
+    text-align:left;
+    text-decoration:none;
+}
+
 #app, .el-container{
     height: 100%;
 }
@@ -24,6 +31,10 @@ body {
     font-weight: 700;
     line-height: 60px;
     margin-left: 200px;
+}
+
+.header-menu {
+
 }
 
 .header-search {
@@ -55,6 +66,10 @@ body {
     margin: 0 3px;
 }
 
-.under-line {
-
+.divideLine {
+    height: 1px;
+    background-color: #A9B7BE;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+

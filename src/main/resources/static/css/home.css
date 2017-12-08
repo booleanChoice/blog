@@ -1,23 +1,48 @@
 #home-container {
-    width: 60%;
-    margin: 0 auto;
+    /*width: 60%;*/
+    /*margin: 0 auto;*/
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.latest-blog-title-container {
+    margin-top: 20px;
 }
 
 .latest-blog-title {
-    display:block;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.latest-blog-category {
+    margin-left: 300px;
+}
+
+.latest-blog-summary-container {
+    margin-left: 20px;
     margin-top: 20px;
-    font-size: 35px;
 }
 
 .latest-blog-summary {
-    font-size: 10px;
+    font-size: 18px;
 }
+
+#read-full-text {
+    color: #ffd04b;
+}
+
+.recent-blog {
+    margin-top: 20px;
+    padding: 20px;
+}
+
 
 .latest-comment-container {
     width: 280px;
     height: 350px;
-    border: 1px solid #d5d5d5;
-    border-radius: 6px;
+    border: 1px solid #CCD0D6;
+    border-radius: 3px;
     margin-top: 35px;
     padding-top: 15px;
     padding-left: 20px;
