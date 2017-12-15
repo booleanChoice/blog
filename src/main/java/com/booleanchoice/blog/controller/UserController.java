@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  *@author yangfan
+ *
  * 一下代码目前只是测试sawgger用，并无实在意义
  */
 @RestController
