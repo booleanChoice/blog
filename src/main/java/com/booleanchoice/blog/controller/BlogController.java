@@ -2,7 +2,8 @@ package com.booleanchoice.blog.controller;
 
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
 
 @Controller
 class BlogController {
@@ -11,7 +12,6 @@ class BlogController {
     public String home() {
         return "home";
     }
-
 
 }
 
